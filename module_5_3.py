@@ -33,8 +33,8 @@ class House:
         return self.number_of_floors
 
     def __iadd__(self, other):
-        self.name += other
-        return self.name
+        self.number_of_floors += other
+        return self.number_of_floors
 
     def __radd__(self, other):
         self.number_of_floors += other
@@ -46,12 +46,11 @@ h1.__len__()
 h1.__str__()
 print(h1 != h2)
 print(h1.__add__(2))
-print(h1.__iadd__("-новый"))
+print(h1.__iadd__(12))
 print(h2.__radd__(12))
 print(h1 == h2)
 h1.__str__()
 h2.__str__()
-
 
 
 
